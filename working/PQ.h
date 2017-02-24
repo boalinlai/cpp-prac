@@ -39,20 +39,23 @@ public:
 template <typename T>
 void PQ<T>::print() {
   cout << "print out default" << endl;
-    while (pq_default.size()) {
-        cout << pq_default.top() << endl;
-        pq_default.pop();
-    }
+  while (pq_default.size()) {
+    cout << pq_default.top() << " ";
+    pq_default.pop();
+  }
+  cout << endl;
   cout << "print out less" << endl;
   while (pq_less.size()) {
-    cout << pq_less.top() << endl;
+    cout << pq_less.top() << " ";
     pq_less.pop();
   }
+  cout << endl;
   cout << "print out greater" << endl;
   while (pq_greater.size()) {
-    cout << pq_greater.top() << endl;
+    cout << pq_greater.top() << " ";
     pq_greater.pop();
   }
+  cout << endl;
 }
 
 template <typename T>
